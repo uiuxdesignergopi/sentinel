@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sentinel Smart Systems - Smarter Offices Start Here</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+            "dm-sans": ["DM Sans", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    .gradient-btn {
+     position: relative;
+  display: inline-flex; /* Use flex for vertical centering */
+  align-items: center;
+  justify-content: center;
+  height: 48px; /* Fixed height */
+  padding: 0 1.5rem; /* Horizontal padding only */
+  border-radius: 24px; /* Rounded corners */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(to right, #16a34a, #2563eb); /* Green → Blue */
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+.gradient-btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ff5c28, #ff7a45); /* Orange Hover */
+  transition: top 0.3s ease;
+  z-index: -1; /* Push background layer below text */
+}
+
+.gradient-btn:hover::before {
+  top: 0;
+}
+
+.gradient-btn span {
+  position: relative;
+  z-index: 2; /* Text always above background */
+}
+
+.gradient-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 92, 40, 0.4);
+}
+
+.gradient-btn:active {
+  transform: scale(0.96);
+}
+  </style>
+</head>
+<body class="font-dm-sans text-gray-800">
+  <!-- Replace every button and link with class="gradient-btn" -->
+  <!-- Example header button -->
+  <header class="bg-gray-100 py-4 fixed w-full top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-6 flex items-center justify-between">
+      <img src="images/logo.png" alt="Logo" class="h-16 w-auto" />
+      <a href="404.html" class="gradient-btn">Request a Free Demo</a>
+    </div>
+  </header>
+  <!-- ...
+  Repeat for every <a> or <button> in the file, replacing their classes with class="gradient-btn".
+  The rest of your HTML remains unchanged.
+  -->
+</body>
+</html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Smart Systems - Smarter Offices Start Here</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'dm-sans': ['DM Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        'orange-primary': '#ff5c28',
+                        'orange-secondary': '#f56134',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+  .gradient-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px; /* Fixed height */
+  padding: 0 1.5rem;
+  border-radius: 24px; /* Capsule shape */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(to right, #16a34a, #2563eb); /* Green→Blue */
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+
+.gradient-btn::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ff5c28, #ff7a45); /* Orange Hover */
+  transition: top 0.3s ease;
+  z-index: -1;
+}
+
+.gradient-btn:hover::before {
+  top: 0;
+}
+
+.gradient-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 92, 40, 0.4);
+}
+
+.gradient-btn:active {
+  transform: scale(0.96);
+}
+
+        .hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url('images/hero.png');
+    background-size: cover;
+    background-position: center;
+}
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        .scroll-animate.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-dm-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gray-100 py-4 fixed w-full top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="images/logo.png" alt="Sentinel Smart Systems Logo" class="h-16 w-auto">
+            </div>
+            
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="404.html" class="text-orange-primary font-medium">Home</a>
+                <a href="404.html" class="text-gray-700 hover:text-orange-primary transition-colors">About</a>
+                <div class="relative group">
+                    <a href="404.html" class="text-gray-700 hover:text-orange-primary transition-colors flex items-center">
+                        Features
+                        <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="relative group">
+                    <a href="404.html" class="text-gray-700 hover:text-orange-primary transition-colors flex items-center">
+                        Case Studies
+                        <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                        </svg>
+                    </a>
+                </div>
+                <a href="404.html" class="text-gray-700 hover:text-orange-primary transition-colors">Blog</a>
+                <a href="404.html" class="text-gray-700 hover:text-orange-primary transition-colors">Contact</a>
+            </nav>
+            
+            <a href="404.html" class="gradient-btn text-white px-8 py-3 rounded-xl font-medium">
+                Request a Free Demo
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="font-poppins font-bold text-6xl text-white leading-tight mb-6 scroll-animate">
+                    Smarter Offices<br>Start with Sentinel
+                </h1>
+                <p class="text-lg text-white mb-8 leading-relaxed scroll-animate">
+                    Know exactly what's happening across your office from air quality and occupancy to temperature and security all tracked in real time by intelligent sensors, and accessible anytime through a powerful, unified dashboard - just a click away.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 scroll-animate">
+                    <a href="404.html" class="gradient-btn text-white px-8 py-4 rounded-xl font-medium inline-block text-center">
+                        Start Monitoring Now
+                    </a>
+                    <a href="404.html" class="border border-white text-white font-medium inline-flex items-center justify-center px-6 h-12 rounded-[24px] hover:bg-white hover:text-gray-800 transition-all"
+>
+                        View Features
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="bg-orange-100 py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative scroll-animate">
+                    <div class="bg-white rounded-3xl p-2 shadow-lg">
+                        <img src="Images/portrait.png" alt="Smart Office Video" class="w-full h-96 object-cover rounded-2xl">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="bg-blue-600 bg-opacity-80 rounded-full p-6 animate-pulse">
+                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="scroll-animate">
+                    <h2 class="font-poppins font-bold text-5xl mb-8">
+                        The Brain Behind Your Smart Office
+                    </h2>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        Sentinel Smart Systems brings intelligent automation and real-time insights to your office environment. From detecting air quality and occupancy to optimizing energy and access control — our sensor network helps you create a safer, healthier, and more efficient workplace.
+                    </p>
+                    <p class="text-lg mb-8 leading-relaxed">
+                        Trusted across corporate offices, co-working spaces, and industrial workspaces alike.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h3 class="font-poppins font-bold text-2xl mb-4 underline">Industries We Serve</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <img src="Images/icon1.png" alt="Office" class="w-6 h-6 mr-3">
+                                <span class="text-lg">Offices</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="Images/icon2.png" alt="Co-working" class="w-6 h-6 mr-3">
+                                <span class="text-lg">Co-working</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="Images/icon3.png" alt="Factory" class="w-6 h-6 mr-3">
+                                <span class="text-lg">Factories</span>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="Images/icon4.png" alt="Clinic" class="w-6 h-6 mr-3">
+                                <span class="text-lg">Clinics</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="404.html" class="gradient-btn text-white px-8 py-4 rounded-xl font-medium inline-block">
+                        Learn More About Our Technology
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="font-poppins font-bold text-5xl text-center mb-16 scroll-animate">
+                Key Features And Benefits
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all scroll-animate">
+                    <img src="Images/features1.png" alt="Real-Time Monitoring" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="font-poppins font-bold text-2xl mb-4">Real-Time Monitoring</h3>
+                    <p class="text-lg mb-6">Instantly track occupancy, temperature, humidity, and motion across your workspace.</p>
+                    <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                        More Info
+                    </a>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all scroll-animate">
+                    <img src="Images/features2.png" alt="Automated Savings" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="font-poppins font-bold text-2xl mb-4">Automated Savings</h3>
+                    <p class="text-lg mb-6">Sensors automatically adjust lighting and HVAC based on real-time usage patterns</p>
+                    <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                        More Info
+                    </a>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all scroll-animate">
+                    <img src="Images/features3.png" alt="Air Quality Detection" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="font-poppins font-bold text-2xl mb-4">Air Quality Detection</h3>
+                    <p class="text-lg mb-6">Ensure a healthier workplace with continuous air quality and CO₂ level insights.</p>
+                    <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                        More Info
+                    </a>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all scroll-animate">
+                    <img src="Images/features4.png" alt="Security Control" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="font-poppins font-bold text-2xl mb-4">Security Control</h3>
+                    <p class="text-lg mb-6">Smart sensors detect access events and help secure every entry point in your office.</p>
+                    <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                        More Info
+                    </a>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all scroll-animate">
+                    <img src="Images/features5.png" alt="Centralized Dashboard" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="font-poppins font-bold text-2xl mb-4">Centralized Dashboard</h3>
+                    <p class="text-lg mb-6">View and manage all sensor data from a single, intuitive dashboard — anytime.</p>
+                    <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                        More Info
+                    </a>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-white rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all scroll-animate">
+                    <img src="Images/features6.png" alt="Instant Alerts" class="w-full h-48 object-cover rounded-2xl mb-6">
+                    <h3 class="font-poppins font-bold text-2xl mb-4">Instant Alerts, Insights</h3>
+                    <p class="text-lg mb-6">Receive real-time notifications and actionable insights for faster decision-making.</p>
+                    <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                        More Info
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="bg-blue-50 py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="font-poppins font-bold text-5xl text-center mb-16 scroll-animate">
+                How Sentinel Works
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg relative overflow-hidden scroll-animate">
+                    <div class="absolute -top-4 -right-4 text-9xl font-poppins font-bold text-orange-primary opacity-20">01</div>
+                    <h3 class="font-poppins font-bold text-3xl text-orange-primary mb-4 relative z-10">
+                        Install Smart<br>Sensors in Your<br>Office
+                    </h3>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg relative overflow-hidden scroll-animate">
+                    <div class="absolute -top-4 -right-4 text-9xl font-poppins font-bold text-blue-600 opacity-20">02</div>
+                    <h3 class="font-poppins font-bold text-3xl text-blue-600 mb-4 relative z-10">
+                        Connect to the<br>Dashboard &<br>Mobile App
+                    </h3>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg relative overflow-hidden scroll-animate">
+                    <div class="absolute -top-4 -right-4 text-9xl font-poppins font-bold text-green-500 opacity-20">03</div>
+                    <h3 class="font-poppins font-bold text-3xl text-green-500 mb-4 relative z-10">
+                        Monitor Data<br>& Set<br>Automation<br>Rules
+                    </h3>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white rounded-3xl p-8 shadow-lg relative overflow-hidden scroll-animate">
+                    <div class="absolute -top-4 -right-4 text-8xl font-poppins font-bold text-orange-primary opacity-20">04</div>
+                    <h3 class="font-poppins font-bold text-3xl text-orange-primary mb-4 relative z-10">
+                        Get Alerts<br>Insights for<br>Better Decision<br>Making
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="font-poppins font-bold text-5xl text-center mb-16 scroll-animate">
+                Workspaces That Work Smarter
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Corporate Offices -->
+                <div class="relative rounded-3xl overflow-hidden shadow-lg group scroll-animate">
+                    <img src="Images/our creation-image15.jpg" alt="Corporate Offices" class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="font-poppins font-bold text-4xl mb-2">Corporate Offices</h3>
+                        <p class="text-lg mb-4">To Optimize workspace usage</p>
+                        <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Co-Working Spaces -->
+                <div class="relative rounded-3xl overflow-hidden shadow-lg group scroll-animate">
+                    <img src="Images/our creation-image16.jpg" alt="Co-Working Spaces" class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="font-poppins font-bold text-4xl mb-2">Co-Working Spaces</h3>
+                        <p class="text-lg mb-4">Manage shared spaces efficiently</p>
+                        <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Factories -->
+                <div class="relative rounded-3xl overflow-hidden shadow-lg group scroll-animate">
+                    <img src="Images/our creation-image17.png" alt="Factories Warehouses" class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="font-poppins font-bold text-4xl mb-2">Factories Warehouses</h3>
+                        <p class="text-lg mb-4">Improve safety & environment monitoring</p>
+                        <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hospitals -->
+                <div class="relative rounded-3xl overflow-hidden shadow-lg group scroll-animate">
+                    <img src="Images/our creation-image18.jpg" alt="Hospitals & Clinics" class="w-full h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-8 text-white">
+                        <h3 class="font-poppins font-bold text-4xl mb-2">Hospitals & Clinics</h3>
+                        <p class="text-lg mb-4">Maintain optimal air quality & hygiene</p>
+                        <a href="404.html" class="gradient-btn text-white px-6 py-3 rounded-xl font-medium inline-block">
+                            More Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-orange-secondary py-20 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <h2 class="font-poppins font-bold text-5xl text-white text-center mb-16 scroll-animate">
+                Success Stories Powered by Sentinel
+            </h2>
+            
+            <div class="relative">
+                <img src="Images/testimonbg.png" alt="Customer Success" class="w-full h-96 object-cover rounded-3xl opacity-30">
+                
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
+                        <div class="bg-black/20 backdrop-blur-sm rounded-2xl p-6 text-white scroll-animate">
+                            <p class="text-sm mb-4">"We cut our energy usage by 37% within 2 months — thanks to Sentinel's automated sensors and alerts."</p>
+                            <p class="text-xs">– Arjun M., Facility Manager at Vertex Corp</p>
+                        </div>
+                        
+                        <div class="bg-black/20 backdrop-blur-sm rounded-2xl p-6 text-white scroll-animate">
+                            <p class="text-sm mb-4">"Setup took less than a day, and we started getting actionable data immediately."</p>
+                            <p class="text-xs">– Dinesh R., CTO, Skyline Logistics</p>
+                        </div>
+                        
+                        <div class="bg-black/20 backdrop-blur-sm rounded-2xl p-6 text-white scroll-animate">
+                            <p class="text-sm mb-4">"Before Sentinel, air quality was a mystery. Now, it's something we monitor and manage daily."</p>
+                            <p class="text-xs">– Rahul M., Health & Safety Officer, Brightlabs Pvt. Ltd.</p>
+                        </div>
+                        
+                        <div class="bg-black/20 backdrop-blur-sm rounded-2xl p-6 text-white scroll-animate">
+                            <p class="text-sm mb-4">"What stood out most was how fast we got results — better energy use and fewer manual checks within weeks."</p>
+                            <p class="text-xs">– Kavita R., IT Manager, VisionTech Co-Work</p>
+                        </div>
+                        
+                        <div class="bg-black/20 backdrop-blur-sm rounded-2xl p-6 text-white scroll-animate">
+                            <p class="text-sm mb-4">"Sentinel gave us complete visibility into our facility — we've never felt more in control of our workspace."</p>
+                            <p class="text-xs">– Priya S., Admin Head, Delta Spaces</p>
+                        </div>
+                        
+                        <div class="bg-black/20 backdrop-blur-sm rounded-2xl p-6 text-white scroll-animate">
+                            <p class="text-sm mb-4">"The air quality insights were a game-changer for our employees' comfort and productivity."</p>
+                            <p class="text-xs">– Sneha T., Operations Lead, Nova Co-Work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-6 text-center">
+            <img src="Images/our creation-image21.png" alt="Pricing Plans" class="w-full max-w-6xl mx-auto rounded-3xl shadow-lg scroll-animate">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="relative py-20">
+        <div class="absolute inset-0">
+            <img src="Images/our creation-image22.jpg" alt="Background" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="scroll-animate">
+                    <img src="Images/our creation-image23.png" alt="Smart Office Dashboard" class="w-full h-96 object-cover rounded-3xl shadow-lg">
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 scroll-animate">
+                    <h2 class="font-poppins font-bold text-5xl text-white mb-8">Talk to Our Team</h2>
+                    
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="First Name" class="bg-gray-200 rounded-3xl px-6 py-4 w-full">
+                            <input type="text" placeholder="Last Name" class="bg-gray-200 rounded-3xl px-6 py-4 w-full">
+                        </div>
+                        <input type="text" placeholder="Company Name" class="bg-gray-200 rounded-3xl px-6 py-4 w-full">
+                        <input type="email" placeholder="Company Email ID" class="bg-gray-200 rounded-3xl px-6 py-4 w-full">
+                        <textarea placeholder="Message (Optional)" rows="4" class="bg-gray-200 rounded-3xl px-6 py-4 w-full resize-none"></textarea>
+                        
+                        <button type="submit" class="gradient-btn text-white px-8 py-4 rounded-3xl font-medium w-full sm:w-auto">
+                            Request a Free Demo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <img src="Images/our creation-image31.png" alt="Sentinel Smart Systems" class="h-12 w-auto mb-6">
+                    <p class="text-sm text-gray-300">Smart sensors. Safer spaces. Smarter decisions.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-bold text-xl mb-6">Address</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        408/A, NewYork<br>
+                        Apartments, 1st Lane,<br>
+                        Kothapet,<br>
+                        K.V. Ranga Reddy<br>
+                        500 060
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-bold text-xl mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="404.html" class="text-gray-300 hover:text-orange-400 transition-colors">Home</a></li>
+                        <li><a href="404.html" class="text-gray-300 hover:text-orange-400 transition-colors">About</a></li>
+                        <li><a href="404.html" class="text-gray-300 hover:text-orange-400 transition-colors">Features</a></li>
+                        <li><a href="404.html" class="text-gray-300 hover:text-orange-400 transition-colors">Case Studies</a></li>
+                        <li><a href="404.html" class="text-gray-300 hover:text-orange-400 transition-colors">Blog</a></li>
+                        <li><a href="404.html" class="text-gray-300 hover:text-orange-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-poppins font-bold text-xl mb-6">Follow Us</h4>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="404.html" class="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <img src="Images/our creation-image29.png" alt="Facebook" class="w-5 h-5">
+                        </a>
+                        <a href="404.html" class="w-9 h-9 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <img src="Images/our creation-image30.png" alt="Twitter" class="w-5 h-5">
+                        </a>
+                        <a href="404.html" class="w-9 h-9 bg-blue-700 rounded-lg flex items-center justify-center">
+                            <img src="Images/our creation-image28.png" alt="LinkedIn" class="w-5 h-5">
+                        </a>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <img src="Images/our creation-image27.png" alt="Phone" class="w-5 h-5 mr-3">
+                            <span class="text-sm">(040) 1234 5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="Images/our creation-image26.png" alt="Email" class="w-5 h-5 mr-3">
+                            <span class="text-sm">sentinelsmart@system.co</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm">© 2026 Sentinel Smart Systems. All rights reserved.</p>
+                    
+                    <div class="flex items-center mt-4 md:mt-0">
+                        <h4 class="font-poppins font-bold text-xl mr-4">Stay Up-to-Date</h4>
+                        <form class="flex">
+                            <input 
+  type="email" 
+  placeholder="Enter Company Email" 
+  class="bg-transparent border border-white h-12 px-6 text-sm text-white placeholder-gray-400 rounded-[24px]"
+>
+<button 
+  type="submit" 
+  class="gradient-btn px-6 text-sm font-medium rounded-[24px]"
+>
+  Subscribe
+</button>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle (if needed)
+        const mobileMenuButton = document.querySelector('[data-mobile-menu-button]');
+        const mobileMenu = document.querySelector('[data-mobile-menu]');
+
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>

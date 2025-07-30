@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Sentinel Smart Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'dm-sans': ['DM Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-btn {
+            background: linear-gradient(90deg, #4F46E5 0%, #6366F1 100%);
+            transition: all 0.3s ease;
+        }
+        .gradient-btn:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.1);
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+</head>
+<body class="font-dm-sans bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="text-center px-6">
+        <div class="mb-8">
+            <h1 class="font-poppins font-bold text-9xl text-gray-300 mb-4">404</h1>
+            <h2 class="font-poppins font-bold text-4xl text-gray-800 mb-4">Page Not Found</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                Sorry, the page you're looking for doesn't exist or is under construction.
+            </p>
+        </div>
+        
+        <div class="space-y-4">
+            <a href="index.html" class="gradient-btn text-white px-8 py-4 rounded-xl font-medium inline-block">
+                Return Home
+            </a>
+            <div>
+                <p class="text-sm text-gray-500">
+                    Need help? Contact us at <a href="mailto:sentinelsmart@system.co" class="text-blue-600 hover:text-blue-800">sentinelsmart@system.co</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="mt-16">
+            <img src="placeholder-logo.png" alt="Sentinel Smart Systems" class="h-16 w-auto mx-auto opacity-50">
+        </div>
+    </div>
+</body>
+</html>
