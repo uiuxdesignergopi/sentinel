@@ -123,6 +123,45 @@
   </style>
 </head>
 <body>
+  <button id="jumpBtn"
+  style="
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    padding: 15px 25px;
+    font-size: 20px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    z-index: 9999;
+  ">
+  Jump
+</button>
+
+<script>
+  const jumpBtn = document.getElementById("jumpBtn");
+
+  // When button is clicked → Trigger spacebar press
+  jumpBtn.addEventListener("click", () => {
+    // Simulate spacebar keydown
+    const spaceEvent = new KeyboardEvent("keydown", {
+      key: " ",
+      keyCode: 32,
+      code: "Space",
+      which: 32,
+      bubbles: true
+    });
+    document.dispatchEvent(spaceEvent);
+
+    // Also simulate mouse click (optional)
+    const clickEvent = new MouseEvent("click", { bubbles: true });
+    document.dispatchEvent(clickEvent);
+  });
+</script>
+
   <div class="error-code">404</div>
   <div class="page-title">GOPI is busy</div>
   <div class="sub-text">Play this Game untill GOPI completes this page 👇 (Click or press SPACE to play)</div>
