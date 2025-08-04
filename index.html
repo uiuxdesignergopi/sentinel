@@ -248,63 +248,73 @@
 
 
     <!-- About Section -->
-    <section class="bg-orange-100 py-20">
-        <div class="container mx-auto px-0">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="relative scroll-animate">
-                    <div class="bg-white rounded-3xl p-2 shadow-lg">
-                       <img src="Images/portrait.png" alt="Smart Office Video" class="w-503 h-613 object-cover rounded-2xl">
-                        <div class="absolute inset-0 flex items-center justify-center">
-                           <a href="https://www.youtube.com/watch?v=PbnSrQbhspw" target="_blank" rel="noopener noreferrer">
-  <div class="bg-[#027598] bg-opacity-80 rounded-full p-6 animate-pulse">
-                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="scroll-animate">
-                    <h2 class="font-poppins font-bold text-5xl mb-8">
-                        The Brain Behind Your Smart Office
-                    </h2>
-                    <p class="text-lg mb-8 leading-relaxed">
-                        Sentinel Smart Systems brings intelligent automation and real-time insights to your office environment. From detecting air quality and occupancy to optimizing energy and access control — our sensor network helps you create a safer, healthier, and more efficient workplace.
-                    </p>
-                    <p class="text-lg mb-8 leading-relaxed">
-                        Trusted across corporate offices, co-working spaces, and industrial workspaces alike.
-                    </p>
-                    
-                    <div class="mb-8">
-                        <h3 class="font-poppins font-bold text-2xl mb-4 underline">Industries We Serve</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <img src="Images/icon1.png" alt="Office" class="w-6 h-6 mr-3">
-                                <span class="text-lg">Offices</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="Images/icon2.png" alt="Co-working" class="w-6 h-6 mr-3">
-                                <span class="text-lg">Co-working</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="Images/icon3.png" alt="Factory" class="w-6 h-6 mr-3">
-                                <span class="text-lg">Factories</span>
-                            </div>
-                            <div class="flex items-center">
-                                <img src="Images/icon4.png" alt="Clinic" class="w-6 h-6 mr-3">
-                                <span class="text-lg">Clinics</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="404.html" class="gradient-btn text-white px-8 py-4 rounded-xl font-medium inline-block">
-                        Learn More About Our Technology
-                    </a>
-                </div>
-            </div>
+  <section class="bg-orange-100 py-20">
+  <div class="container mx-auto px-0">
+    <div class="grid lg:grid-cols-2 gap-[60px] items-center"> <!-- 60px gap between columns -->
+      
+      <!-- IMAGE SECTION -->
+      <div class="relative scroll-animate">
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden">
+          <img src="Images/portrait.png" alt="Smart Office Video" class="w-full h-full object-cover rounded-2xl">
+          
+          <!-- PLAY BUTTON OVERLAY -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <a href="https://www.youtube.com/watch?v=PbnSrQbhspw" target="_blank" rel="noopener noreferrer" aria-label="Play Smart Office Video">
+              <div class="bg-[#027598] bg-opacity-80 rounded-full p-6 animate-pulse hover:scale-110 transition">
+                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                </svg>
+              </div>
+            </a>
+          </div>
         </div>
-    </section>
+      </div>
+
+      <!-- TEXT CONTENT SECTION -->
+      <div class="scroll-animate">
+        <h2 class="font-poppins font-bold text-5xl mb-8">
+          The Brain Behind Your Smart Office
+        </h2>
+        <p class="text-lg mb-8 leading-relaxed">
+          Sentinel Smart Systems brings intelligent automation and real-time insights to your office environment. From detecting air quality and occupancy to optimizing energy and access control — our sensor network helps you create a safer, healthier, and more efficient workplace.
+        </p>
+        <p class="text-lg mb-8 leading-relaxed">
+          Trusted across corporate offices, co-working spaces, and industrial workspaces alike.
+        </p>
+
+        <!-- INDUSTRIES LIST -->
+        <div class="mb-8">
+          <h3 class="font-poppins font-bold text-2xl mb-4 underline">Industries We Serve</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <img src="Images/icon1.png" alt="Office" class="w-6 h-6 mr-3">
+              <span class="text-lg">Offices</span>
+            </div>
+            <div class="flex items-center">
+              <img src="Images/icon2.png" alt="Co-working" class="w-6 h-6 mr-3">
+              <span class="text-lg">Co-working</span>
+            </div>
+            <div class="flex items-center">
+              <img src="Images/icon3.png" alt="Factory" class="w-6 h-6 mr-3">
+              <span class="text-lg">Factories</span>
+            </div>
+            <div class="flex items-center">
+              <img src="Images/icon4.png" alt="Clinic" class="w-6 h-6 mr-3">
+              <span class="text-lg">Clinics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA BUTTON -->
+        <a href="404.html" class="bg-gradient-to-r from-orange-500 to-pink-500 text-white px-8 py-4 rounded-xl font-medium inline-block hover:opacity-90 transition">
+          Learn More About Our Technology
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
 
     <!-- Features Section -->
     <section class="bg-gray-100 py-20">
