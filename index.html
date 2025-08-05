@@ -716,22 +716,20 @@
                 mobileMenu.classList.toggle('hidden');
             });
         }
-    </script>
-    <!-- Lenis Smooth Scroll -->
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
-<!-- Lenis Smooth Scroll (basic setup) -->
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
-<script>
-  const lenis = new Lenis()
+  <script>
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smooth: true,
+    });
 
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
 
-  requestAnimationFrame(raf)
-</script>
-
+    requestAnimationFrame(raf);
+  </script>
 
 </body>
 </html>
